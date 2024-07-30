@@ -1,27 +1,15 @@
-// client/src/App.js
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import HomePage from './layouts/Homepage/HomePage'
 
 function App() {
-  const [message, setMessage] = useState('');
-
-  useEffect(() => {
-    axios.get('/')
-      .then(response => {
-        setMessage(response.data);
-      })
-      .catch(error => {
-        console.error('There was an error fetching the data!', error);
-      });
-  }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>{message}</p>
-      </header>
-    </div>
-  );
+    
+    <HomePage/>
+
+  )
 }
 
 export default App;
