@@ -1,10 +1,14 @@
 import Hero from './components/Hero'
+import Navbar from '../NavbarAndFooter/NavBar'
 
-function HomePage () {
+function HomePage() {
 
     return (
 
-        <Hero/>
+        <>
+            <Navbar />
+            <Hero />
+        </>
 
     )
 }
