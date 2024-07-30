@@ -19,5 +19,13 @@
     z-index: 0;
   }
 
+  .col-image-left {
+    background-image: url("../public/images/HomePage/sign-in-cta.jpg");
+    height: 15em !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
   
 

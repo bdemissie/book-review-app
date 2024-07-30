@@ -11,7 +11,7 @@ function Hero() {
         <div className="input-group mb-3 w-75 mx-auto">
           <input type="text" className="form-control" placeholder="Search by title, author, or genre" />
           <div className="input-group-append">
-            <button className="btn btn-primary" type="button">Search</button>
+            <button className="btn btn-outline-light px-3" type="button">Search</button>
           </div>
         </div>
         <div className="mt-4">

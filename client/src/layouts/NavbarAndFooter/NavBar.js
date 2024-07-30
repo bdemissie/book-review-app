@@ -1,7 +1,7 @@
 // import { NavLink } from "react-router-dom";
 
 
-function Navbar() {
+function NavBar() {
     return (
         <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
             <div className='container-fluid'>
@@ -36,4 +36,4 @@ function Navbar() {
     );
 };
 
-export default Navbar;
+export default NavBar;

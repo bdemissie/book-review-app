@@ -12,7 +12,7 @@ function ExploreTopBooks() {
                 </div>
             </div>
             <div className="mt-3 text-center">
-                <a className="btn btn-outline-secondary btn-lg" href="/#">View More</a>
+                <a className="btn btn-outline-dark btn-lg text-black" href="/#">View More</a>
             </div>
         </>
     )
