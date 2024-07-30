@@ -1,5 +1,7 @@
 import Hero from './components/Hero'
 import Navbar from '../NavbarAndFooter/NavBar'
+import Footer from '../NavbarAndFooter/Footer'
+import ExploreTopBooks from './components/ExploreTopBooks';
 
 function HomePage() {
 
@@ -8,6 +10,8 @@ function HomePage() {
         <>
             <Navbar />
             <Hero />
+            <ExploreTopBooks />
+            <Footer />
         </>
 
     )
