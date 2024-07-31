@@ -19,51 +19,300 @@ const sampleBooks = [
   {
     _id: new ObjectId(),
     bookId: 1,
-    title: "Book One",
-    author: "Author One",
+    title: "To Kill a Mockingbird",
+    author: "Harper Lee",
     genre: "Fiction",
-    publishedYear: 2021,
-    averageRating: 4.5
+    publishedYear: 1960,
+    averageRating: 4.8,
+    imageUrl: "https://example.com/image1.jpg"
   },
   {
     _id: new ObjectId(),
     bookId: 2,
-    title: "Book Two",
-    author: "Author Two",
-    genre: "Non-Fiction",
-    publishedYear: 2020,
-    averageRating: 4.0
+    title: "1984",
+    author: "George Orwell",
+    genre: "Dystopian",
+    publishedYear: 1949,
+    averageRating: 4.7,
+    imageUrl: "https://example.com/image2.jpg"
+  },
+  // Add more books here...
+  {
+    _id: new ObjectId(),
+    bookId: 3,
+    title: "Pride and Prejudice",
+    author: "Jane Austen",
+    genre: "Romance",
+    publishedYear: 1813,
+    averageRating: 4.6,
+    imageUrl: "https://example.com/image3.jpg"
+  },
+  {
+    _id: new ObjectId(),
+    bookId: 4,
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    genre: "Fiction",
+    publishedYear: 1925,
+    averageRating: 4.5,
+    imageUrl: "https://example.com/image4.jpg"
+  },
+  {
+    _id: new ObjectId(),
+    bookId: 5,
+    title: "Moby-Dick",
+    author: "Herman Melville",
+    genre: "Adventure",
+    publishedYear: 1851,
+    averageRating: 4.1,
+    imageUrl: "https://example.com/image5.jpg"
+  },
+  {
+    _id: new ObjectId(),
+    bookId: 6,
+    title: "War and Peace",
+    author: "Leo Tolstoy",
+    genre: "Historical Fiction",
+    publishedYear: 1869,
+    averageRating: 4.3,
+    imageUrl: "https://example.com/image6.jpg"
+  },
+  {
+    _id: new ObjectId(),
+    bookId: 7,
+    title: "Crime and Punishment",
+    author: "Fyodor Dostoevsky",
+    genre: "Psychological Fiction",
+    publishedYear: 1866,
+    averageRating: 4.4,
+    imageUrl: "https://example.com/image7.jpg"
+  },
+  {
+    _id: new ObjectId(),
+    bookId: 8,
+    title: "The Catcher in the Rye",
+    author: "J.D. Salinger",
+    genre: "Fiction",
+    publishedYear: 1951,
+    averageRating: 4.2,
+    imageUrl: "https://example.com/image8.jpg"
+  },
+  {
+    _id: new ObjectId(),
+    bookId: 9,
+    title: "The Odyssey",
+    author: "Homer",
+    genre: "Epic",
+    publishedYear: -800,
+    averageRating: 4.6,
+    imageUrl: "https://example.com/image9.jpg"
+  },
+  {
+    _id: new ObjectId(),
+    bookId: 10,
+    title: "The Brothers Karamazov",
+    author: "Fyodor Dostoevsky",
+    genre: "Philosophical Fiction",
+    publishedYear: 1880,
+    averageRating: 4.5,
+    imageUrl: "https://example.com/image10.jpg"
+  },
+  {
+    _id: new ObjectId(),
+    bookId: 11,
+    title: "Jane Eyre",
+    author: "Charlotte Brontë",
+    genre: "Romance",
+    publishedYear: 1847,
+    averageRating: 4.7,
+    imageUrl: "https://example.com/image11.jpg"
+  },
+  {
+    _id: new ObjectId(),
+    bookId: 12,
+    title: "Wuthering Heights",
+    author: "Emily Brontë",
+    genre: "Gothic Fiction",
+    publishedYear: 1847,
+    averageRating: 4.6,
+    imageUrl: "https://example.com/image12.jpg"
+  },
+  {
+    _id: new ObjectId(),
+    bookId: 13,
+    title: "The Divine Comedy",
+    author: "Dante Alighieri",
+    genre: "Epic Poetry",
+    publishedYear: 1320,
+    averageRating: 4.4,
+    imageUrl: "https://example.com/image13.jpg"
+  },
+  {
+    _id: new ObjectId(),
+    bookId: 14,
+    title: "The Iliad",
+    author: "Homer",
+    genre: "Epic",
+    publishedYear: -750,
+    averageRating: 4.5,
+    imageUrl: "https://example.com/image14.jpg"
+  },
+  {
+    _id: new ObjectId(),
+    bookId: 15,
+    title: "Les Misérables",
+    author: "Victor Hugo",
+    genre: "Historical Fiction",
+    publishedYear: 1862,
+    averageRating: 4.7,
+    imageUrl: "https://example.com/image15.jpg"
+  },
+  {
+    _id: new ObjectId(),
+    bookId: 16,
+    title: "Brave New World",
+    author: "Aldous Huxley",
+    genre: "Dystopian",
+    publishedYear: 1932,
+    averageRating: 4.6,
+    imageUrl: "https://example.com/image16.jpg"
+  },
+  {
+    _id: new ObjectId(),
+    bookId: 17,
+    title: "The Hobbit",
+    author: "J.R.R. Tolkien",
+    genre: "Fantasy",
+    publishedYear: 1937,
+    averageRating: 4.8,
+    imageUrl: "https://example.com/image17.jpg"
+  },
+  {
+    _id: new ObjectId(),
+    bookId: 18,
+    title: "Fahrenheit 451",
+    author: "Ray Bradbury",
+    genre: "Dystopian",
+    publishedYear: 1953,
+    averageRating: 4.5,
+    imageUrl: "https://example.com/image18.jpg"
+  },
+  {
+    _id: new ObjectId(),
+    bookId: 19,
+    title: "Don Quixote",
+    author: "Miguel de Cervantes",
+    genre: "Adventure",
+    publishedYear: 1605,
+    averageRating: 4.4,
+    imageUrl: "https://example.com/image19.jpg"
+  },
+  {
+    _id: new ObjectId(),
+    bookId: 20,
+    title: "The Lord of the Rings",
+    author: "J.R.R. Tolkien",
+    genre: "Fantasy",
+    publishedYear: 1954,
+    averageRating: 4.9,
+    imageUrl: "https://example.com/image20.jpg"
   }
 ];
 
 const sampleUsers = [
   {
     email: "user1@example.com",
-    password: bcrypt.hashSync("password123", 10), // Adjust salt rounds as needed
+    password: bcrypt.hashSync("password123", 10),
     reviews: [
       {
-        bookId: sampleBooks[0].bookId, // Placeholder for later update
-        review: "Great book!",
+        bookId: 1,
+        review: "A masterpiece.",
         rating: 5,
-        date: new Date("2023-12-31T00:00:00Z").toISOString()
+        date: new Date("2023-01-01T00:00:00Z").toISOString()
       },
       {
-        bookId: sampleBooks[1].bookId, // Placeholder for later update
-        review: "Enjoyed it a lot!",
+        bookId: 2,
+        review: "Thought-provoking.",
         rating: 4,
-        date: new Date("2023-12-31T00:00:00Z").toISOString()
+        date: new Date("2023-02-01T00:00:00Z").toISOString()
       }
     ]
   },
   {
     email: "user2@example.com",
-    password: bcrypt.hashSync("password456", 10), // Adjust salt rounds as needed
+    password: bcrypt.hashSync("password456", 10),
     reviews: [
       {
-        bookId: sampleBooks[0].bookId, // Placeholder for later update
-        review: "Informative and well-written.",
+        bookId: 3,
+        review: "A timeless romance.",
+        rating: 5,
+        date: new Date("2023-03-01T00:00:00Z").toISOString()
+      }
+    ]
+  },
+  {
+    email: "user3@example.com",
+    password: bcrypt.hashSync("password789", 10),
+    reviews: [
+      {
+        bookId: 4,
+        review: "A classic.",
         rating: 4,
-        date: new Date("2023-12-31T00:00:00Z").toISOString()
+        date: new Date("2023-04-01T00:00:00Z").toISOString()
+      },
+      {
+        bookId: 5,
+        review: "A bit long but worth it.",
+        rating: 3,
+        date: new Date("2023-05-01T00:00:00Z").toISOString()
+      }
+    ]
+  },
+  {
+    email: "user4@example.com",
+    password: bcrypt.hashSync("password012", 10),
+    reviews: [
+      {
+        bookId: 6,
+        review: "Epic storytelling.",
+        rating: 5,
+        date: new Date("2023-06-01T00:00:00Z").toISOString()
+      },
+      {
+        bookId: 7,
+        review: "Deep and thoughtful.",
+        rating: 4,
+        date: new Date("2023-07-01T00:00:00Z").toISOString()
+      }
+    ]
+  },
+  {
+    email: "user5@example.com",
+    password: bcrypt.hashSync("password345", 10),
+    reviews: [
+      {
+        bookId: 8,
+        review: "Engaging and relatable.",
+        rating: 4,
+        date: new Date("2023-08-01T00:00:00Z").toISOString()
+      }
+    ]
+  },
+  {
+    email: "user6@example.com",
+    password: bcrypt.hashSync("password678", 10),
+    reviews: [
+      {
+        bookId: 9,
+        review: "An epic journey.",
+        rating: 5,
+        date: new Date("2023-09-01T00:00:00Z").toISOString()
+      },
+      {
+        bookId: 10,
+        review: "Philosophical and profound.",
+        rating: 5,
+        date: new Date("2023-10-01T00:00:00Z").toISOString()
       }
     ]
   }
@@ -77,9 +326,10 @@ const bookSchema = {
     author: { type: 'string' },
     genre: { type: 'string' },
     publishedYear: { type: 'integer' },
-    averageRating: { type: 'number', minimum: 0, maximum: 5 }
+    averageRating: { type: 'number', minimum: 0, maximum: 5 },
+    imageUrl: { type: 'string' }
   },
-  required: ['title', 'author', 'genre', 'publishedYear', 'averageRating']
+  required: ['title', 'author', 'genre', 'publishedYear', 'averageRating', 'imageUrl']
 };
 
 const userSchema = {
