@@ -1,10 +1,13 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
+import SearchBar from './components/SearchBar';
+
 // import { NavLink } from "react-router-dom";
 
 
 function NavBar() {
     return (
-        <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
             <div className='container-fluid'>
                 <span className='navbar-brand'>Read & Review</span>
                 <button className='navbar-toggler'
@@ -19,16 +22,13 @@ function NavBar() {
                 <div className='collapse navbar-collapse' id='navbarNavDropdown'>
                     <ul className='navbar-nav'>
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="/#">Home</a>
+                            <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
                         </li>
                     </ul>
-                    <form className="d-flex" role="search">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                            <button className="btn btn-outline-light" type="submit">Search</button>
-                    </form>
+                    <SearchBar />
                     <ul className='navbar-nav ms-auto'>
                         <li className='nav-item m-1'>
-                            <a type='button' className='btn btn-outline-light' href="/#">Join Now</a>
+                            <Link type='button' className='btn btn-outline-light' to="/sign-in">Join Now</Link>
                         </li>
                     </ul>
                 </div>

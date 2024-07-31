@@ -21,7 +21,7 @@ function App() {
         <Route path='/' element={<Navigate to='/home' />} />
         <Route path='/home' element={<HomePage />} />
         <Route path='/sign-in' element={<SignInPage />} />
-        <Route path='/bookreview' element={<BookReviewPage />} />
+        <Route path='/book-review' element={<BookReviewPage />} />
       </Routes>
       </div>
       <Footer />

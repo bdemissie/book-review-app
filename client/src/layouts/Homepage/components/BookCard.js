@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const BookCard = () => {
+
+    const navigate = useNavigate();
     const book = {
         image: null, // Set to null to use the default image
         title: "Default Book Title",
@@ -17,8 +20,17 @@ const BookCard = () => {
         ]
     };
 
+    const handleClick = () => {
+
+        navigate('/book-review');
+
+    }
+
     return (
-        <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+        <div 
+            className="col-xs-6 col-sm-6 col-md-4 col-lg-4 mb-3" 
+            onClick = {handleClick}
+            style={{ cursor: 'pointer' }}>
             <div className="text-center">
                 {book.image ? (
                     <img

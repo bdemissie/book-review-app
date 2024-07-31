@@ -1,4 +1,6 @@
+import {Link} from 'react-router-dom'
 import BookCard from './BookCard'
+
 function ExploreTopBooks() {
 
     return (
@@ -12,7 +14,7 @@ function ExploreTopBooks() {
                 </div>
             </div>
             <div className="mt-3 text-center">
-                <a className="btn btn-outline-dark btn-lg text-black" href="/#">View More</a>
+                <Link className="btn btn-outline-dark btn-lg text-black" to="">View More</Link>
             </div>
         </>
     )

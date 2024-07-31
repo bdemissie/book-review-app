@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function SignInCTA() {
     return (
@@ -14,7 +15,7 @@ function SignInCTA() {
                             We would love to know what you have been reading.
                             Sign in and leave us your review.
                         </p>
-                        <a className="btn btn-outline-dark btn-lg main-color  text-black" href="/#">Sign up</a>
+                        <Link className="btn btn-outline-dark btn-lg main-color  text-black" to="/sign-in">Sign In</Link>
                     </div>
                 </div>
             </div>
